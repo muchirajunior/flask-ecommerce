@@ -1,2 +1,5 @@
 flask
 flask_sqlalchemy
+flask_cors
+flask_bcrypt
+psycopg2-binary
