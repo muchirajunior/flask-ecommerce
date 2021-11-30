@@ -14,37 +14,16 @@
 </head>
 <body>
  
-  <script>
-    function handleMenu(operation){
-        var nav=document.getElementById('modal');
-        nav.style.display=operation;       
-    }
-
-  </script>
-
-<div id="modal" class="my-modal">
-  <button class="modal-close" onclick="handleMenu('none')" ><i class="material-icons">close</i></button>
-  <br>
-  <ul class="">
-    <li class="collection-item"><a href="{{url_for(('index'))}}" style="color: white;">home</a></li>
-    <li class="collection-item"><a href="{{url_for(('about'))}}" style="color: white;">about us</a></li>
-    <li class="collection-item"><a href="{{url_for(('index'))}}" style="color: white;">contact us</a></li>
-
-  </ul>
-          
-
-</div>
-
   <nav>
-    <div class="nav-wrapper purple darken-4">
-      <a href="{{url_for('index')}}" class="brand-logo">My Shop</a>
+    <div class="nav-wrapper ">
+      <a href="{{url_for('admin.adminLogin')}}" class="brand-logo center">{{page}}</a>
       <ul  class="right hide-on-med-and-down">
-        <li><a href="{{url_for('about')}}">about</a></li>
+        <li><a href="{{url_for('admin.addproduct')}}">add Product</a></li>
         <li><a href="badges.html">Components</a></li>
         <li><a href="collapsible.html">JavaScript</a></li>
        
       </ul>
-      <span  class="nav-button purple darken-4" style="float: right;" onclick="handleMenu('block')" ><i class="material-icons">menu</i></span> 
+   
       </div>      
 
   </nav>
