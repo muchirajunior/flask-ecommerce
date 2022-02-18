@@ -10,17 +10,16 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../static/javascript/main.js" ></script>
     <title>my shop</title>
 </head>
-<body>
- 
-  <script>
-    function handleMenu(operation){
-        var nav=document.getElementById('modal');
-        nav.style.display=operation;       
-    }
+<body onload="onLoad()">
 
-  </script>
+  <div id="loading" class="pre-loader" >
+    <div  class="loader" ></div>
+  </div>
+ 
+
 
 <div id="modal" class="my-modal">
   <button class="modal-close" onclick="handleMenu('none')" ><i class="material-icons">close</i></button>
